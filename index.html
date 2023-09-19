@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <meta charset="UTF-8">
+    <title>Botanical Touch | Home</title>
+    <link rel="icon" href="favicon_io/favicon.ico">
+</head>
+
+<body style="background-color: #2c7f09;">
+    <section class="heading">
+        <h1>Herbal <span style="color: yellow;">Oil</span></h1>
+        <img class="banner" src="Images/banner-img.png" alt="">
+        <a class="nav-img" href=""><img src="Images/logo2.png" alt=""></a>
+        <a href="">
+            <div class="btn1">Shop Now! &#8594;</div>
+        </a>
+        <nav>
+            <div class="navbar" id="navbar">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a class="nav-active" href="index.html">Home</a></li>
+                    <li><a class="nav" href="checkOut.html">Order Now</a></li>
+                    <li><a class="nav" href="contactUs.html">Contact Us</a></li>
+                    <li><a class="nav" href="https://arviedirectsales.com.ph/">About Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()" style="float: right;"></i>
+        </nav>
+        <p class="subtitle">"Explore the world of Herbal Oil and Essentials, where nature's remedies meet modern wellness. Discover the countless benefits and versatile uses of herbal oils and essential oils, from soothing aromatherapy to natural skincare and beyond. Dive into a realm of holistic health and learn how these botanical extracts can enhance your well-being."</p>
+
+       
+       
+       
+       
+       <div class="kapenato-ads" id="kapenatoAds">
+          <i class="fa fa-times" id="closeAd" onclick="closeAd()"></i>
+          <h3 id="count"></h3>
+           <a href="https://kapenato.arviedirectsales.com.ph/index.php"><div class="ad--box">
+               <div class="ad-col-2"><img class="kapenato-img" src="Images/ads.png" alt=""></div>
+               <hr>
+               <div class="ad-col-2"><div class="text-box"><h2 class="title">&nbsp;KAPENATO</h2><p class="subtitle" >Experience vitality in every cup of our Herbal Coffee. Energize your day, boost focus and memory, and reduce anxiety. Elevate metabolism, manage diabetes risk, and promote longevity. With abundant antioxidants, it supports heart health, lowers blood pressure, and fights inflammation. Enjoy cognitive enhancement, lower cholesterol, and liver protection. Benefit your thyroid, gut health, and weight loss. Defend against pathogens, aid digestion, and prevent constipation. Discover a new level of wellness with our Herbal Coffee—your daily source of vitality.</p></div></div>
+           </div></a>
+       </div>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+        <div class="order-window" id="orderwindow">
+            <i class="fa fa-times" id="close" onclick="closeWindow()"></i>
+
+            <div class="col-2">
+                <div class="c2">
+                    <div class="itm-box">
+                        <video id="itemBoxV" width="100%" height="100%" autoplay muted loop>
+                            <source src="Images/vid.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="itm-box-2">
+                        <img id="itemBoxP" src="" alt="">
+                    </div>
+                    <div class="slct-pics">
+                        <div class="pic-box" onclick="document.getElementById('itemBoxV').src='Images/vid.mp4'; document.getElementById('itemBoxP').style.display = 'none'; document.getElementById('itemBoxV').style.display = 'block'"><video width="99%" height="99%">
+                                <source src="Images/vid.mp4" type="video/mp4">
+                            </video></div>
+
+                        <div class="pic-box" onclick="document.getElementById('itemBoxP').src='Images/oil-small.png'; document.getElementById('itemBoxV').style.display = 'none'; document.getElementById('itemBoxP').style.display = 'block'"><img src="Images/oil-small.png" alt=""></div>
+                        <div class="pic-box" onclick="document.getElementById('itemBoxP').src='Images/banner-img.png'; document.getElementById('itemBoxV').style.display = 'none'; document.getElementById('itemBoxP').style.display = 'block'"><img src="Images/banner-img.png" alt=""></div>
+                        <div class="pic-box" onclick="document.getElementById('itemBoxP').src='Images/oil-fr.png'; document.getElementById('itemBoxV').style.display = 'none'; document.getElementById('itemBoxP').style.display = 'block'"><img src="Images/oil-fr.png" alt=""></div>
+                    </div>
+                    <div class="slct-pics">
+                        <div class="pic-box" onclick="document.getElementById('itemBoxP').src='Images/oil-rsllr.png'; document.getElementById('itemBoxV').style.display = 'none'; document.getElementById('itemBoxP').style.display = 'block'"><img src="Images/oil-rsllr.png" alt=""></div>
+                        <div class="pic-box" onclick="document.getElementById('itemBoxP').src='Images/oil-stockist.png'; document.getElementById('itemBoxV').style.display = 'none'; document.getElementById('itemBoxP').style.display = 'block'"><img src="Images/oil-stockist.png" alt=""></div>
+                        <div style="border: none;" class="pic-box"></div>
+                        <div style="border: none;" class="pic-box"></div>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="c2">
+                    <div class="c2-title">
+                        <h2>100% all Organic Menthol Massage Oil with Moringa Extract and VCO Mixed with all Organic that Ingredients gives Fresh Fragrants and a Relaxing Menthol Feeling 60ml per Bottle</h2>
+                    </div>
+                    <div class="c2-title-2">
+                        <p>
+                            <span style="color: yellow"><i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i></span>&nbsp;(50k)<br>
+                            <span id="discount" style="text-decoration: line-through; color: dimgrey; font-size: 30px;">&nbsp;₱200&nbsp;</span>&nbsp;&nbsp;<span id="price" style="color: green; font-size: 30px;">₱150</span>&nbsp;&nbsp;<span style="color: red; font-size: 30px;">Sale!</span><br>
+                            shipping calculated at checkout.
+                        </p>
+                    </div>
+                    <div class="c2-title-3">
+                        <form action="">
+                            <label for="package">Promo Packs (Buy More Save More!!!&#128525;) </label><br>
+                            <select name="" id="package" style="color: red; font-weight: 600;">
+                                <option value="1" style="color: black;">Regular (1pc)</option>
+                                <option value="2" selected style="color: black;">Free Shipping Nationwide! (4pcs)</option>
+                                <option value="3" style="color: black;">Reseller (Member)</option>
+                                <option value="4" style="color: black;">City Stockist</option>
+                            </select>
+                            <input id="qty" type="number" min="1" value="1" max="50" class="qty">
+                            <div class="buy-btns">
+                                <a href="#moreInfo" class="ow-info">MORE INFO</a>
+                                <a href="checkOut.html" class="ow-buy">BUY IT NOW</a>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="cart" id="cart">
+            <i class="fa fa-shopping-cart" onclick="openWindow()"></i>
+        </div>
+
+    </section>
+
+    <section class="testimonials">
+        <div class="slide-btns"><img onclick="prevSlide()" src="Images/prev.png" alt="">
+            <img onclick="nextSlide()" src="Images/next.png" alt="">
+        </div>
+        <div class="img-box"><img src="Images/testi-1.png" alt="" id="activeImg"></div>
+        <div class="slide-box">
+            <div class="img-circle"></div>
+            <div class="img-circle"></div>
+            <div class="img-circle"></div>
+            <div class="img-circle"></div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="s1">
+
+        <h1 class="content">Available Packages</h1>
+        <div class="col-4">
+            <div class="itm-4"><a href="checkOut.html">
+                    <div class="cont-4">
+                       <img src="Images/oil-reg.png" alt="">
+                        <div class="title">
+                            <h1><b>Regular</b></h1>
+                            <h1><b><span style="color: greenyellow; float: right;">₱150</span></b></h1>
+                        </div>
+                        <div class="sub-title">
+                            <p>Get the Regular SRP of this product, you will also handle the shipping fee according to the adress that you will give</p>
+                        </div>
+
+                    </div>
+                </a></div>
+
+            <div class="itm-4"><a href="checkOut.html">
+                    <div class="cont-4">
+                        <img src="Images/oil-fr.png" alt="">
+                        <div class="title">
+                            <h1><b>Free Shipping</b></h1>
+                            <h1><b><span style="color: greenyellow; float: right;">₱600</span></b></h1>
+                        </div>
+                        <div class="sub-title">
+                            <p>Get the SRP of 4pcs of the product with Each Package and enjoy the FREE SHIPPING PROMO</p>
+                        </div>
+                    </div>
+                </a></div>
+
+            <div class="itm-4"><a href="checkOut.html">
+                    <div class="cont-4">
+                        <img src="Images/oil-rsllr.png" alt="" style="padding-top: 10px;">
+                        <div class="title">
+                            <h1 style="font-size: 24px;"><b>Resseler (Member)</b></h1>
+                            <h1><b><span style="color: greenyellow; float: right;">₱2,000</span></b></h1>
+                        </div>
+                        <div class="sub-title">
+                            <p style="font-size: 16px">One of the TOP SELLING PACKAGES! This package allows you to buy the product for only ₱90! and you can sell this with the SRP of ₱150! with the total Return Of Investment of ₱3,000! + FREE SHIPPING FEE</p>
+                        </div>
+                    </div>
+                </a></div>
+
+            <div class="itm-4"><a href="checkOut.html">
+                    <div class="cont-4">
+                        <img src="Images/oil-stockist.png" alt="">
+                        <div class="title">
+                            <h1><b>City Stockist</b></h1>
+                            <h1><b><span style="color: greenyellow; float: right;">₱70,000</span></b></h1>
+                        </div>
+                        <div class="sub-title">
+                            <p style="font-size: 17px">The Ultimate Business Package! Have a chance to be the Stockist of your Very Own City! Buy 850 bottles for only ₱70,000 and get a total Return Of Investment of ₱127,500! + FREE SHIPPING FEE</p>
+                        </div>
+                    </div>
+                </a></div>
+        </div>
+
+    </section>
+
+    <section class="s2" id="moreInfo">
+        <h1 class="content">Know More About This Product!</h1>
+        
+        
+        <div class="info">
+            <div class="info-siders">
+                <div class="text--box">
+                    <h2>Ingridinets:</h2>
+                    <ul>
+                        <li>Menthol</li>
+                        <li>Moringa Seed Oil</li>
+                        <li>Orange Peel Oil</li>
+                        <li>Turmeric Extract</li>
+                        <li>Peppermint Oil</li>
+                        <li>Grape Seed Oil</li>
+                        <li>Virgin Coconut Oil</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1"><img class="taunt-img" src="Images/oil.png" alt=""></div>
+            <div class="info-siders">
+                <div class="text--box">
+                    <h2>Benefits:</h2>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our Herbal Massage Oil provides a holistic approach to well-being. It offers pain relief, anti-inflammatory benefits, and immune system support. It's great for skin, combating acne, aging, and irritation. It promotes oral health, stress management, and brain function, while aiding digestion and easing IBS symptoms. This versatile oil also works wonders on dark spots, wrinkles, and various skin conditions. It's a natural energy source, reduces hunger, and supports heart health. Additionally, it addresses digestive issues, headaches, and offers hair and skin protection. Enjoy its external and internal benefits for a balanced wellness experience.</p>
+                </div>
+            </div>
+        </div>
+
+   
+    </section>
+
+    <section class="s3">
+        <div class="window"><a href="contactUs.html">Contact Us</a></div>
+    </section>
+
+
+
+    <section class="ftr">
+        <div class="cont-5">
+            <div class="col-5"><a href=""><img class="ftr-lg2" src="Images/logo2.png" alt=""></a><a href="https://arviedirectsales.com.ph/"><img class="ftr-lg" src="Images/logo.png" alt=""></a></div>
+            <div class="col-5"></div>
+            <div class="col-5"></div>
+            <div class="col-5"></div>
+            <div class="col-5">
+                <ul>
+                    <li><a class="nav-ftr" href="index.html"><b>Home</b></a></li>
+                    <li><a class="nav-ftr" href="checkOut.html"><b>Order Now</b></a></li>
+                    <li><a class="nav-ftr" href="contactUs.html"><b>Contact Us</b></a></li>
+                    <li><a class="nav-ftr" href="https://arviedirectsales.com.ph/"><b>About Us</b></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="ft-hr">
+
+        <div class="foot">
+            <div class="icons">
+                <a href="https://www.facebook.com/botanicaltouchoil"><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-youtube"></i></a>
+                <p>©Copyright, All Rights Reserved.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+</body>
+<script src="script.js"></script>
+<script src="orderForms.js"></script>
+<script src="slideshow.js"></script>
+<script src="kapenatoAd.js"></script>
+</html>

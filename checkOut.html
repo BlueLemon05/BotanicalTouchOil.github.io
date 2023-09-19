@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <meta charset="UTF-8">
+    <title>Botanical Touch | Check Out</title>
+    <link rel="icon" href="favicon_io/favicon.ico">
+    <style>
+        @media(max-width: 700px) {
+            .ftr {
+                margin-top: 200%;
+            }
+
+            .nav-img {
+                width: 50px;
+                height: 50px;
+                top: -8.5%;
+                left: -11%;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body style="background-color: white;">
+    <section class="s-order">
+        <div class="receipt-bkg" id="receiptDisplay">
+           
+           <div class="receipt-inst"><img src="Images/receipt-ins.png" alt=""></div>
+           <div class="arrow"><img src="Images/arrow.png" alt=""></div>
+           
+            <div class="receipt-box" id="receipt">
+                <form action="mailto:johnnischecampang@gmail.com" method="post" enctype="text/plain">
+                    <img src="Images/logo.png" alt="">
+                    <div class="rcpt-sub">
+                        <p>Arvie Direct Sales Bldg., Tanza Trece Rd. Brgy. Sanja Mayor Tanza, Cavite <br> Tel. 046-238-2110</p>
+                    </div>
+                    <hr class="receipt-box-hr">
+                    <div class="title--2">
+                        <p>Delivery Receipt</p>
+                    </div>
+                    <hr class="receipt-box-hr">
+                    <div class="content-1"><textarea class="orderMail" name="Order" id="orderMail" cols="47" rows="10" readonly></textarea></div>
+                    <hr class="receipt-box-hr">
+                    <div class="title--3">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="cof-col-2-title">
+                                        <h1 id="pn2"></h1>
+                                    </div>
+                                </td>
+                                <td class= "money" id="pPrice"></td>
+                            </tr>
+                            <tr>
+                                <td class= "table-data">Quantity</td>
+                                <td class= "money" id="qtyDisplay"></td>
+                            </tr>
+                            <tr>
+                                <td class= "table-data">Shipping Fee</td>
+                                <td class= "money" id="shippFee">Free Shipping!</td>
+                            </tr>
+                            <hr class="total-hr">
+                            <tr>
+                                <td class= "table-data">Total</td>
+                                <td class= "money" id="totalPrice"></td>
+                            </tr>
+
+                        </table>
+                    </div>
+                    <hr class="receipt-box-hr">
+                    <div class="barcode">
+                    <button type="submit" class="ship-order"><h1>Ship Order!</h1></button>
+                    <div class="back-" onclick="receiptNoDisplay()"><h1>Back</h1></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <a class="nav-img" href="index.html" style="padding: 70px 40px;"><img src="Images/logo2.png" alt=""></a>
+        <div class="bar"></div>
+        <nav>
+            <div class="navbar" id="navbar">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a class="nav" href="index.html">Home</a></li>
+                    <li><a class="nav-active" href="checkOut.html">Order Now</a></li>
+                    <li><a class="nav" href="contactUs.html">Contact Us</a></li>
+                    <li><a class="nav" href="https://arviedirectsales.com.ph/">About Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()" style="float: right; color: darkgreen"></i>
+        </nav>
+
+        <div class="cof-title">
+            <h1>Check Out Form</h1>
+            <div class="sub">
+                <p><b>Kindly Fill Up the All the Forms for the Necessary Information. <br>DISCLAIMER: We collect and use your personal information only for specific purposes and in accordance with our Privacy Policy. Rest assured, we prioritize the security and confidentiality of your data. Thank you for trusting us with your information.</b></p>
+            </div>
+        </div>
+        <div class="cof-bkg">
+            <div class="cnfti" style="-webkit-transform: scaleX(-1);
+  transform: scaleX(-1);"><img src="Images/confetti.gif" alt=""></div>
+            <div class="cnfti"><img src="Images/confetti.gif" alt=""></div>
+        </div>
+
+        <form id="cofForm" class="cof-form" onsubmit="receiptDisplay();return false">
+            <div class="cof-window">
+                <div class="cof-col-2">
+                    <div class="instr">
+                        <p>
+                            INSTRUCTIONS: <br>Kindly fill up <b>ALL</b> the <b>BLANKS</b> necessary to Complete the order, Carefully Check your <b>SPELLING</b>. Once done, Kindly Confirm your order after <b>TRIPLE CHECKING</b> your Address and by Clicking the Confirm Order Below. Thankyou for your Purchase! &#128525;
+                        </p>
+                    </div>
+                    <div class="lvl-1">
+                        <input id="name" type="text" class="name" placeholder="Please Enter Full Name" title="Please Input your Full Name" required>
+                        <input id="contactNo" type="tel" class="contactNo" placeholder="#e.g.0912 345 6789" pattern="[0-9]{4} [0-9]{3} [0-9]{4}" required title="Please Use the Valid Format: 0922 333 444" oninvalid="setCustomValidity('Please Use the Valid Format: 0922 333 444'); document.getElementByID('contactNo').value = " " ; ">
+                    </div>
+                    <div class="lvl-2">
+                        <select name="" id="island" class="island" placeholder="Islands" required>
+                            <option value="" disabled selected hidden>Select Island</option>
+                            <option value="1">Luzon</option>
+                            <option value="2">Vizayas</option>
+                            <option value="3">Mindanao</option>
+                        </select>
+                        <input type="text" title="Type your City or Province" id="cty" class="cty" placeholder="City/Province" required>
+                        <input type="text" title="Type your Municipality" id="mncplty" class="mncplty" placeholder="Municipality" required>
+                    </div>
+                    <div class="lvl-3">
+                        <textarea name="" title="Type your Barangay and/or Subdivision" id="brgy" cols="30" rows="10" class="brgy" placeholder="Brgy./Subdivision" required></textarea>
+                        <textarea name="" title="Type your exact Street, Blk. and Lot" id="street" cols="30" rows="10" class="street" placeholder="Street and House # or Bldg." required></textarea>
+                    </div>
+                    <div class="lvl-4"><textarea title='Postscript or "Pahabol Sulat" ' name="" id="extra" cols="30" rows="10" class="extra" placeholder="Additional Messeges/Directions or Requests(not required)"></textarea></div>
+
+
+                </div>
+
+                <hr style="margin: 5px 0">
+
+                <div class="cof-col-2">
+                    <div class="cof-picBox"><img id="picBox" src="Images/no-display.png" alt=""></div>
+                    <div class="cof-col-2-title">
+                        <h1 id="pn">-------------------</h1>
+                    </div>
+                    <div class="col--2">
+                        <div class="box-2" id="descript"><p>Descrpit....</p></div>
+                        <div class="box-2">
+                            <p>
+                                <span style="color: yellow"><i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i></span>&nbsp;(50k)<br>
+                                <span id="discount" style="text-decoration: line-through; color: dimgrey; font-size: 30px;">₱0&nbsp;</span><br><span id="price" style="color: green; font-size: 30px;">₱0</span>&nbsp;&nbsp;<span style="color: red; font-size: 30px;">Sale!</span><br>
+                                shipping calculated at checkout.
+                                
+                            </p>
+                        </div>
+                    </div>
+                    <select name="" id="package" class="slct-pckg" required>
+                        <option value="" disabled selected hidden>Select Package</option>
+                        <option value="1">Regular (1pc)</option>
+                        <option value="2">Free Shipping (4pcs)</option>
+                        <option value="3">Reseller (Member)</option>
+                        <option value="4">City Stockist</option>
+                    </select>
+                    <input id="qty" type="number" min="1" value="" max="100" class="qty" placeholder="Quantity" required>
+                </div>
+            </div>
+
+            <div class="cmd-btns">
+                <button type="submit" class="cnfrm-ordr">Confirm Order</button>
+                <div class="home-btn"><a href="index.html" class="">Back to Home</a></div>
+            </div>
+        </form>
+<br>
+<br>
+<br>
+<br>
+    </section>
+    <section class="ftr">
+        <div class="cont-5">
+            <div class="col-5"><a href=""><img class="ftr-lg2" src="Images/logo2.png" alt=""></a><a href="https://arviedirectsales.com.ph/"><img class="ftr-lg" src="Images/logo.png" alt=""></a></div>
+            <div class="col-5"></div>
+            <div class="col-5"></div>
+            <div class="col-5"></div>
+            <div class="col-5">
+                <ul>
+                    <li><a class="nav-ftr" href="index.html"><b>Home</b></a></li>
+                    <li><a class="nav-ftr" href="checkOut.html"><b>Order Now</b></a></li>
+                    <li><a class="nav-ftr" href="contactUs.html"><b>Contact Us</b></a></li>
+                    <li><a class="nav-ftr" href="https://arviedirectsales.com.ph/"><b>About Us</b></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="ft-hr">
+
+        <div class="foot">
+            <div class="icons">
+                <a href="https://www.facebook.com/botanicaltouchoil"><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-youtube"></i></a>
+                <p>©Copyright, All Rights Reserved.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+</body>
+<script src="script.js"></script>
+<script src="orderForms.js"></script>
+<script src="receipt.js"></script>
+</html>
